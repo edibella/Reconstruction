@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "fft-tools",
+        "scope": null,
+        "escapedName": "fft-tools",
+        "name": "fft-tools",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/yetian/MRI"
+    ]
+  ],
+  "_from": "fft-tools@latest",
+  "_id": "fft-tools@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/fft-tools",
+  "_nodeVersion": "5.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/fft-tools-0.0.1.tgz_1463601177839_0.9418475946877152"
+  },
+  "_npmUser": {
+    "name": "kcerb",
+    "email": "iamkcerb@gmail.com"
+  },
+  "_npmVersion": "3.4.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "fft-tools",
+    "scope": null,
+    "escapedName": "fft-tools",
+    "name": "fft-tools",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/fft-tools/-/fft-tools-0.0.1.tgz",
+  "_shasum": "db57de74055e331b77691e1eaaaca02e69fb0350",
+  "_shrinkwrap": null,
+  "_spec": "fft-tools",
+  "_where": "/Users/yetian/MRI",
+  "author": {
+    "name": "KC Erb",
+    "email": "iamkcerb@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/edibella/fft-tools/issues"
+  },
+  "dependencies": {
+    "matlab-spec": "^2.0.0"
+  },
+  "description": "Matlab package for Fourier transforms of MRI images.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "db57de74055e331b77691e1eaaaca02e69fb0350",
+    "tarball": "https://registry.npmjs.org/fft-tools/-/fft-tools-0.0.1.tgz"
+  },
+  "gitHead": "f9b256f36095411a8f071ecbd566772e851eeb1d",
+  "homepage": "https://github.com/edibella/fft-tools#readme",
+  "keywords": [
+    "matlab",
+    "package",
+    "fourier",
+    "transform",
+    "tools"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "kcerb",
+      "email": "iamkcerb@gmail.com"
+    }
+  ],
+  "name": "fft-tools",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edibella/fft-tools.git"
+  },
+  "scripts": {
+    "postinstall": "node scripts/rename.js"
+  },
+  "version": "0.0.1"
+}
