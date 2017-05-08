@@ -1,4 +1,7 @@
 function showImage(Image,fNorm,tNorm,sNorm,Cost)
+% adjust orintation
+Image = rot90(Image,2);
+
 [nx,ny,nof,~,nSMS,ns] = size(Image);
 frame_num = floor(nof/4);
 im = reshape(Image,[nx,ny,nof,nSMS*ns]);
@@ -26,5 +29,7 @@ plot(fNorm,'c*-')
 plot(tNorm,'kx-');
 plot(sNorm,'k.-');
 plot(Cost);
+
+legend('Fidelity Norm','Temopral TV Norm','Spatial TV Norm','Total Cost')
 drawnow
 end
