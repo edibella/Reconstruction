@@ -71,6 +71,15 @@ disp('Reconstruction done');fprintf('\n')
 disp('Saving image into Results...')
 Image = gather(Image);
 
+% crop Image to be saved
+sx = size(Image,1);
+sx4 = round(sx/4);
+Image = Image(sx4+1:3*sx4,sx4+1:3*sx4,:);
+
+% adjust orintation of Image
+Image = rot90(Image,2);
+
+% save Image
 save_dir = strcat(para.Recon.save_dir,para.time);
 save([save_dir,'.mat'],'Image','para','-v7.3');
 
