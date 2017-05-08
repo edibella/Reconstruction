@@ -15,9 +15,12 @@ clear para
 para.kSpace_center = 144; % radial k space center
 para.dataAngle = 180;     % acquired radial data angle range, 180 or 360
 
-para.dir.load_kSpace_name = 'human_perfusion_24_rays_slice_3.mat';
+% This is the data name and directory to be read and reconstructed
+para.dir.load_kSpace_name = 'P092214_human_24_rays_perfusion_slice_3.mat';
 para.dir.load_kSpace_dir = [pwd,'/RawData/'];
-para.dir.save_recon_img_mat_dir = strcat(pwd,'/processing/');
+
+% Where to save the resulting images
+para.dir.save_recon_img_mat_dir = strcat(pwd,'/Results/');
 
 % Update images and cost function at each iteration. Default not showing
 % for speed, can change the setting to "1" to turn it on.
