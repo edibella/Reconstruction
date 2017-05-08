@@ -1,5 +1,3 @@
-I am new to Githut. I don't know how to upload large files yet, so I put the data files elsewhere at:
+The data in this folder is a data after PCA compress on coils, having 7-coils and 133 time frames. The oringional data has 32 coils and 260 time frames is too large, so I put it else where:
 
 https://drive.google.com/drive/folders/0B2q3RwN6lqwJU05TVGpjTnpaZ2s?usp=sharing
-
-After I get more familiar with Github I will move the files here. If you have any questions, please contact phye1988@gmail.com
