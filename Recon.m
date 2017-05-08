@@ -19,8 +19,9 @@ para.dir.load_kSpace_name = 'human_perfusion_24_rays_slice_3.mat';
 para.dir.load_kSpace_dir = [pwd,'/RawData/'];
 para.dir.save_recon_img_mat_dir = strcat(pwd,'/processing/');
 
-% Showing cost function and Images while running
-para.plot = 1;
+% Update images and cost function at each iteration. Default not showing
+% for speed, can change the setting to "1" to turn it on.
+para.plot = 0;
 
 % change methods here.
 % NUFFT  - based on Fesseler's NUFFT package
@@ -29,8 +30,9 @@ para.plot = 1;
 % grid3  - MATLAB's griddate using default setting
 para.interp_method = 'NN';
 
-% GPU does not support NUFFT.
-para.ifGPU = 1;
+% Turn on GPU for faster reconstruction. Dose not support NUFFT method.
+% Please read MATLAB's GPU requirments before using.
+para.ifGPU = 0;
 
 para.noi = 100;          % number of iterations
 para.step_size = 0.1;    % step size

@@ -15,7 +15,7 @@ kSpace = reshape(kSpace,[sx,nor,nof,no_comp,1,ns]);
 
 
 %%%%% pre-interpolation
-disp('Pre-interpolate into cartesion space...')
+disp('Pre-interpolate into Cartesian space...')
 
 [x_coor, y_coor] = get_k_coor(sx,theta,ifNUFFT,kCenter);
 
