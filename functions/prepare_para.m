@@ -15,27 +15,7 @@ name = '';
 if ~isempty(strfind(kSpace_name,'perfusion')) || ~isempty(strfind(kSpace_name,'Perfusion')) || ~isempty(strfind(kSpace_name,'PERFUSION'))
     name = strcat(name,'Perfusion_');
 end
-if ~isempty(strfind(kSpace_name,'Rest')) || ~isempty(strfind(kSpace_name,'rest')) || ~isempty(strfind(kSpace_name,'REST'))
-    name = strcat(name,'Rest_');
-elseif ~isempty(strfind(kSpace_name,'Stress')) || ~isempty(strfind(kSpace_name,'stress')) || ~isempty(strfind(kSpace_name,'STRESS'))
-    name = strcat(name,'Stress_');
-end
-if ~isempty(strfind(kSpace_name,'AIF'))
-    name = strcat(name,'AIF_');
-end
-if ~isempty(strfind(kSpace_name,'3D'))
-    name = strcat(name,'3D_');
-end
-if ~isempty(strfind(kSpace_name,'echo_1'))
-    name = strcat(name,'echo_1_');
-elseif ~isempty(strfind(kSpace_name,'echo_2'))
-    name = strcat(name,'echo_2_');
-end
-if ~isempty(strfind(kSpace_name,'diastole')) || ~isempty(strfind(kSpace_name,'Diastole'))
-    name = strcat(name,'diastole_');
-elseif ~isempty(strfind(kSpace_name,'systole')) || ~isempty(strfind(kSpace_name,'Systole'))
-    name = strcat(name,'systole_');
-end
+name = strcat(name,[para.interp_method,'_']);
 para.Recon.save_dir = strcat(para.dir.save_recon_img_mat_dir,name);
 
 if isempty(dir(para.dir.save_recon_img_mat_dir))
