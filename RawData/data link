@@ -1,3 +1,4 @@
-The data in this folder is a data after PCA compress on coils, having 7-coils and 133 time frames. The oringional data has 32 coils and 260 time frames is too large, so I put it else where:
+The data in this folder is a data after PCA compress on coils, having 7-coils and 133 time frames.
+The oringional data has 32 coils and 260 time frames, and is too large, so I put it else where:
 
 https://drive.google.com/drive/folders/0B2q3RwN6lqwJU05TVGpjTnpaZ2s?usp=sharing
