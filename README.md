@@ -1,6 +1,6 @@
 # Reconstruction
 
-This repository is self-consistent. It includes MATLAB code and data for the paper "Evaluation of Pre-reconstruction Interpolation Methods for Iterative Reconstruction of Radial k-Space Data":http://onlinelibrary.wiley.com/doi/10.1002/mp.12357/abstract
+This repository is self-consistent. It includes MATLAB code and data for the paper "Evaluation of Pre-reconstruction Interpolation Methods for Iterative Reconstruction of Radial k-Space Data": http://onlinelibrary.wiley.com/doi/10.1002/mp.12357/abstract
 
 
 - The "Recon.m" includes settings and parameters for reconstuction and just run it will call the main reconstruction function "Reconstruction.m".
