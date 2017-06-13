@@ -46,7 +46,7 @@ classdef MultiNufft
       Nd = imSize;
       self.Nd = Nd;
       self.Jd = [6,6];
-      self.Kd = floor(Nd*2);
+      self.Kd = floor(Nd*1.5);
       self.n_shift = Nd/2 + shift;
       self.w = w;
     end
