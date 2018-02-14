@@ -31,7 +31,7 @@ para.plot = 0;
 % GROG   - self-calibrated GRAPPA Operater Gridding
 % NN     - Bilinear Nearest Neighber
 % grid3  - MATLAB's griddate using default setting
-para.interp_method = 'NN';
+para.interp_method = 'GROG';
 
 % Turn on GPU for faster reconstruction. Dose not support NUFFT method.
 % Please read MATLAB's GPU requirments before using.
